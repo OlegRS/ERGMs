@@ -1,0 +1,23 @@
+# Ignoring binaries
+triad_model/bin
+q_star_model/bin
+AKS_model/bin
+
+# Ignoring .png images
+# triad_model/figures
+# q_star_model/figures
+# AKS_model/figures
+
+# Ignoring data files
+# triad_model/data/*
+# q_star_model/data/*
+# AKS_model/data/*
+
+# Ignoring Emacs temporary files
+*\#*
+
+# Ignoring large data files
+*PS__N_NODES_1000__N_ITERS_PER_LINK_10__t1_MF_3284.576351__t2_MF_-7500__t3_MF_4500__N_AVRGNG_100000__INITIALIZE_RANDOMLY_0.csv
+*PS__N_NODES_1000__N_ITERS_PER_LINK_10__t1_MF_3284.576351__t2_MF_-7500__t3_MF_4500__N_AVRGNG_100000__INITIALIZE_RANDOMLY_0.csv
+*MF__N_NODES_1000__N_ITERS_PER_LINK_10__t1_MF_3284.576351__t2_MF_-7500__t3_MF_4500__N_AVRGNG_100000__INITIALIZE_RANDOMLY_0.csv
+*MF__N_NODES_1000__N_ITERS_PER_LINK_10__t1_MF_3284.576351__t2_MF_-7500__t3_MF_4500__N_AVRGNG_100000__INITIALIZE_RANDOMLY_0.csv
