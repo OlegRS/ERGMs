@@ -22,7 +22,7 @@ title = "$t_1=$" + str(round(t1_MF, 2)) + "$;\ t_2=$" + str(round(t2_MF,3)) + "$
 L = np.arange(0,1, 1e-5)
 
 F = -2*t1_MF*L - 2*t2_MF*L**2 - 2*t3_MF*L**3 + L*np.log(L/(1-L)) + np.log(1-L)
-axs[0].plot(L, F, label="Specific MCFE", linewidth=2)
+axs[0].plot(L, F, label="SMFE", linewidth=2)
 axs[0].plot(Ld, F[30000], marker='+', markersize=40, color='red', zorder=500)
 
 axs[0].axvline(0, color='black')

@@ -27,7 +27,7 @@ title = "$t_1=$" + str(round(t1_MF, 4)) + "$;\ t_2=$" + str(t2_MF) + "$;\ t_3=$"
 L = np.arange(1e-5,1, 1e-5)
 
 F = -2*t1_MF*L - 2*t2_MF*L**2 - 2*t3_MF*L**3 + L*np.log(L/(1-L)) + np.log(1-L)
-axs[0,0].plot(L, F, label="Specific MCFE")
+axs[0,0].plot(L, F, label="SMFE")
 
 axs[0,0].axvline(0, color='black')
 axs[0,0].axhline(0, color='black')
@@ -196,7 +196,7 @@ title = "$t_1=$" + str(round(t1_MF, 3)) + "$;\ t_2=$" + str(t2_MF) + "$;\ t_3=$"
 L = np.arange(1e-5,1, 1e-5)
 
 F = -2*t1_MF*L - 2*t2_MF*L**2 - 2*t3_MF*L**3 + L*np.log(L/(1-L)) + np.log(1-L)
-axs[1,0].plot(L, F, label="Specific MCFE")
+axs[1,0].plot(L, F, label="SMFE")
 
 axs[1,0].axvline(0, color='black')
 axs[1,0].axhline(0, color='black')
@@ -391,7 +391,7 @@ title = "$t_1=$" + str(round(t1_MF, 3)) + "$;\ t_2=$" + str(t2_MF) + "$;\ t_3=$"
 L = np.arange(1e-5,1, 1e-5)
 
 F = -2*t1_MF*L - 2*t2_MF*L**2 - 2*t3_MF*L**3 + L*np.log(L/(1-L)) + np.log(1-L)
-axs[2,0].plot(L, F, label="Specific MCFE")
+axs[2,0].plot(L, F, label="SMFE")
 
 axs[2,0].axvline(0, color='black')
 axs[2,0].axhline(0, color='black')
