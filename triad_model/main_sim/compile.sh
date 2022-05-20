@@ -6,6 +6,7 @@ rm ../bin/*
 
 [ -d "../data/triad_model" ] || mkdir "../data/triad_model"
 
+[ -d "../data/triad_model/graphs" ] || mkdir "../data/triad_model/graphs"
 [ -d "../data/triad_model/t1_scanning" ] || mkdir "../data/triad_model/t1_scanning"
 [ -d "../data/triad_model/t2_scanning" ] || mkdir "../data/triad_model/t2_scanning"
 [ -d "../data/triad_model/t3_scanning" ] || mkdir "../data/triad_model/t3_scanning"
@@ -15,6 +16,7 @@ rm ../bin/*
 
 [ -d "../data/mean_field_model" ] || mkdir "../data/mean_field_model"
 
+[ -d "../data/mean_field_model/graphs" ] || mkdir "../data/mean_field_model/graphs"
 [ -d "../data/mean_field_model/t1_scanning" ] || mkdir "../data/mean_field_model/t1_scanning"
 [ -d "../data/mean_field_model/t2_scanning" ] || mkdir "../data/mean_field_model/t2_scanning"
 [ -d "../data/mean_field_model/t3_scanning" ] || mkdir "../data/mean_field_model/t3_scanning"
@@ -29,3 +31,4 @@ g++ -std=c++11 t1_scanning.cpp ../../GraphOS/src/aux_math.cpp ../../GraphOS/src/
 g++ -std=c++11 ensemble_avrging_t1_scan.cpp ../../GraphOS/src/aux_math.cpp ../../GraphOS/src/matrices/A_matrix.cpp  -Ofast -o ../bin/ensemble_avrging_t1_scan
 g++ -std=c++11 degree_and_cc_distr.cpp ../../GraphOS/src/aux_math.cpp ../../GraphOS/src/matrices/A_matrix.cpp  -Ofast -o ../bin/degree_and_cc_distr
 g++ -std=c++11 n_scanning.cpp ../../GraphOS/src/aux_math.cpp ../../GraphOS/src/matrices/A_matrix.cpp  -Ofast -o ../bin/n_scanning
+g++ -std=c++11 saving_sample_from_triad_model.cpp ../../GraphOS/src/*.cpp ../../GraphOS/src/matrices/*.cpp  -Ofast -o ../bin/saving_sample_from_triad_model

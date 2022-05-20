@@ -6,6 +6,7 @@ rm ../bin/*
 
 [ -d "../data/p_star_model" ] || mkdir "../data/p_star_model"
 
+[ -d "../data/p_star_model/graphs" ] || mkdir "../data/p_star_model/graphs"
 [ -d "../data/p_star_model/t1_scanning" ] || mkdir "../data/p_star_model/t1_scanning"
 [ -d "../data/p_star_model/t2_scanning" ] || mkdir "../data/p_star_model/t2_scanning"
 [ -d "../data/p_star_model/t3_scanning" ] || mkdir "../data/p_star_model/t3_scanning"
@@ -14,6 +15,7 @@ rm ../bin/*
 
 [ -d "../data/mean_field_model" ] || mkdir "../data/mean_field_model"
 
+[ -d "../data/mean_field_model/graphs" ] || mkdir "../data/mean_field_model/graphs"
 [ -d "../data/mean_field_model/t1_scanning" ] || mkdir "../data/mean_field_model/t1_scanning"
 [ -d "../data/mean_field_model/t2_scanning" ] || mkdir "../data/mean_field_model/t2_scanning"
 [ -d "../data/mean_field_model/t3_scanning" ] || mkdir "../data/mean_field_model/t3_scanning"
@@ -28,3 +30,5 @@ g++ -std=c++11 t1_scanning.cpp ../../GraphOS/src/aux_math.cpp ../../GraphOS/src/
 g++ -std=c++11 deg_distrib.cpp  ../../GraphOS/src/aux_math.cpp ../../GraphOS/src/matrices/A_matrix.cpp -Ofast -o ../bin/deg_distrib
 
 g++ -std=c++11 degree_and_lcc_distributions.cpp ../../GraphOS/src/aux_math.cpp ../../GraphOS/src/matrices/A_matrix.cpp  -Ofast -o ../bin/degree_and_lcc_distributions
+
+g++ -std=c++11 save_sample.cpp ../../GraphOS/src/*.cpp ../../GraphOS/src/matrices/*.cpp  -Ofast -o ../bin/save_sample
